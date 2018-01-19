@@ -17,9 +17,11 @@ build:
   script: python setup.py install
 
 requirements:
+  host:
+    - python
+
   build:
     - {{ compiler('c') }}
-    - python
 
   run:
     - python
